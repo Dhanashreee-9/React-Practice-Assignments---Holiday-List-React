@@ -42,12 +42,12 @@ class App extends Component {
       <div id="main">
         {/* Do not remove the main div */}
        <ol>
-        <li key="location1">Goa</li>
-        <li key="location2">Amsterdam</li>
-        <li key="location3">New York</li>
-        <li key="location4">Darjeeling</li>
-        <li key="location5">Tokyo</li>
-        <li key="location6">Lonavala</li>
+        <li key="location1">{this.cityList.name}</li>
+        <li key="location2">{this.cityList.name}</li>
+        <li key="location3">{this.cityList.name}</li>
+        <li key="location4">{this.cityList.name}</li>
+        <li key="location5">{this.cityList.name}</li>
+        <li key="location6">{this.cityList.name}</li>
        </ol>
     </div>
     )
