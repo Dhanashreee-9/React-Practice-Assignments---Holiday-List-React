@@ -40,15 +40,18 @@ class App extends Component {
   render() {
     return (
       <div id="main">
-        {/* Do not remove the main div */}
+        {cityList.filter(country => country.includes('I')).map(filteredName => (
        <ol>
-        <li key="location1">Amritsar</li>
-        <li key="location2">Mussoorie</li>
-        <li key="location3">Mount Abu</li>
-        <li key="location4">Goa</li>
-        <li key="location5">Tirupati</li>
-        <li key="location6">Jaipur</li>
+        <li key="location1">filteredName</li>
+      <li key="location2">filteredName</li>
+      <li key="location3">filteredName</li>
+//         <li key="location2">Mussoorie</li>
+//         <li key="location3">Mount Abu</li>
+//         <li key="location4">Goa</li>
+//         <li key="location5">Tirupati</li>
+//         <li key="location6">Jaipur</li>
        </ol>
+      ))}
     </div>
     )
   }
