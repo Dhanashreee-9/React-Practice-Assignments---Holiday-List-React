@@ -40,16 +40,12 @@ class App extends Component {
   render() {
     return (
       <div id="main">
-        {cityList.filter(country => country.includes('I')).map(filteredName => (
+       
        <ol>
-        <li key="location1">filteredName</li>
-      <li key="location2">filteredName</li>
-      <li key="location3">filteredName</li>
-//         <li key="location2">Mussoorie</li>
-//         <li key="location3">Mount Abu</li>
-//         <li key="location4">Goa</li>
-//         <li key="location5">Tirupati</li>
-//         <li key="location6">Jaipur</li>
+        {this.props.cityList.filter(country => country.includes('I')).map(filteredName => (
+         return <li key="location1">{filteredName.name}</li>
+         <li key="location2">{filteredName.name}</li>
+         <li key="location3">{filteredName.name}</li>
        </ol>
       ))}
     </div>
