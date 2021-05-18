@@ -37,18 +37,20 @@ class App extends Component {
     ]
   }
 
-  render() {
+render() {
     return (
       <div id="main">
-       
-       <ol>
-        {this.cityList.filter((city)=>city.country =="India").map((city,key)=>{
-           <li key={`location${key +1}`}> {city.name}</li>       
-                             ) }
-                           }
-            </ol>
-      
-    </div>
+        {/* Do not remove the main div */}
+        <ol>
+          {
+            this.cityList.filter((city)=>city.country=="India").map((city,key)=>(
+              <li key={`location${key +1}`}>{city.name}</li>
+
+            
+            ))
+          }
+        </ol>
+      </div>
     )
   }
 }
