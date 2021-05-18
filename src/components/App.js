@@ -43,7 +43,7 @@ render() {
         {/* Do not remove the main div */}
         <ol>
           {
-            this.cityList.filter((city)=>city.country=="India").map((city,key)=>(
+            this.cityList.slice(0,6).filter((city)=>city.country=="India").map((city,key)=>(
               <li key={`location${key +1}`}>{city.name}</li>
 
             
